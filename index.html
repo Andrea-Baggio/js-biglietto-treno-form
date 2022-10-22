@@ -10,14 +10,14 @@
         <link rel="stylesheet" href="css/style.css">
 
         <!-- script -->
-        <script src="js/script.js"></script>
+        <script src="js/script.js" defer></script>
     </head>  
 
     <body>
         <div class="container">
             <div>
                 <!-- nome e cognome -->
-                <form">
+                <form>
                     <label for="name">Nome Cognome</label><br>
                     <input type="text" id="name" name="name" placeholder="Inserire...">           
                 </form> 
@@ -25,7 +25,7 @@
 
             <div>
                 <!-- km -->
-                <form">
+                <form>
                     <label for="km">Km da percorrerre</label><br>
                     <input type="text" id="km" name="km" placeholder="Inserire...">           
                 </form> 
@@ -35,21 +35,29 @@
                 <!-- età -->
                 <label for="age">Fascia d'età</label> <br>
                 <select name="age" id="age">
-                    <option value="volvo">Under 18</option>
-                    <option value="saab">Maggiorenne</option>
-                    <option value="fiat">Over 65</option>
+                    <option value="" class="empty"></option>
+                    <option value="under">Under 18</option>
+                    <option value="in">Maggiorenne</option>
+                    <option value="over">Over 65</option>
                 </select>
             </div>
         </div>
 
         <div class="small-container">
             <div>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Genera">
             </div>
 
             <div>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Annulla">
             </div>
-        </div>            
+        </div>  
+        
+        <div class="container-response">
+            <div class="ticket">
+                Costo biglietto:
+                <span id="ticketPrice"></span>
+            </div>
+        </div>
     </body>
 </html>

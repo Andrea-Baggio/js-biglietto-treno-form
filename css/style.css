@@ -5,14 +5,22 @@
 }
 
 .container {
+    max-width: 900px;
+    margin: auto;
     display: flex;
     justify-content: center;
     gap: 40px;
 }
 
 .small-container {
+    max-width: 900px;
+    margin: auto;
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 30px;
+}
+
+.empty {
+    display: none;
 }
